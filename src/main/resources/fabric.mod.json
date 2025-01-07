@@ -3,15 +3,15 @@
 	"id": "forgedarsenal",
 	"version": "${version}",
 	"name": "forged arsenal",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "you forge weapons or smth",
 	"authors": [
-		"Me!"
+		"ChaniedArray", "Roach"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/SaharaRailways",
+		"sources": "https://github.com/SaharaRailways/Forged-Arsenal-1.21.1"
 	},
-	"license": "MIT",
+	"license": "GNU AGPL",
 	"icon": "assets/forgedarsenal/icon.png",
 	"environment": "*",
 	"entrypoints": {
