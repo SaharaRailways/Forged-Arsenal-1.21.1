@@ -1,5 +1,7 @@
 package net.chaniedarray.forgedarsenal;
 
+import net.chaniedarray.forgedarsenal.block.ModBlocks;
+import net.chaniedarray.forgedarsenal.item.ModItemGroups;
 import net.chaniedarray.forgedarsenal.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -16,11 +18,13 @@ public class ForgedArsenal implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

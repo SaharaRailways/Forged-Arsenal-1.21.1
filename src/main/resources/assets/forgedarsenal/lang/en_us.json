@@ -1,3 +1,8 @@
 {
-  "item.forgedarsenal.smoldering_alloy": "Smoldering Alloy"
+  "item.forgedarsenal.smoldering_alloy": "Smoldering Alloy",
+  "item.forgedarsenal.molton_iron": "Molton Iron",
+
+  "block.forgedarsenal.ash_block": "Ash Block",
+
+  "itemGroup.forgedarsenal.forged_arsenal_items": "Forged Arsenal Items"
 }
