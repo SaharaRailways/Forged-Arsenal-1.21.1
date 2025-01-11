@@ -1,6 +1,7 @@
 package net.chaniedarray.forgedarsenal.block;
 
 import net.chaniedarray.forgedarsenal.ForgedArsenal;
+import net.chaniedarray.forgedarsenal.block.custom.AshBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -14,7 +15,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block ASH_BLOCK = registerBlock("ash_block",
-            new Block(AbstractBlock.Settings.create().strength(4f).sounds(BlockSoundGroup.SAND)));
+            new AshBlock(AbstractBlock.Settings.create().strength(4f).sounds(BlockSoundGroup.SAND)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

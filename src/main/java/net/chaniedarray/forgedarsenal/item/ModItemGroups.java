@@ -18,6 +18,8 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemGroup.forgedarsenal.forged_arsenal_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.SMOLDERING_ALLOY);
+                        entries.add(ModItems.MOLTON_IRON);
+                        entries.add(ModItems.CHISEL);
                         entries.add(ModBlocks.ASH_BLOCK);
                     }).build());
 
