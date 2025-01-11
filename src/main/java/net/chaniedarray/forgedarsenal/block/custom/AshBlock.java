@@ -28,7 +28,7 @@ public class AshBlock extends Block {
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity itemEntity) {
-            if(itemEntity.getStack().getItem() == ModItems.MOLTON_IRON) {
+            if(itemEntity.getStack().getItem() == ModItems.MOLTEN_IRON) {
                 itemEntity.setStack(new ItemStack(ModItems.SMOLDERING_ALLOY, itemEntity.getStack().getCount()));
             }
         }

@@ -11,7 +11,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item SMOLDERING_ALLOY = registerItem("smoldering_alloy", new Item(new Item.Settings()));
-    public static final Item MOLTON_IRON = registerItem("molton_iron", new Item(new Item.Settings()));
+
+    public static final Item MOLTEN_IRON = registerItem("molten_iron", new Item(new Item.Settings()));
 
     public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(32)));
 
@@ -24,7 +25,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(SMOLDERING_ALLOY);
-            fabricItemGroupEntries.add(MOLTON_IRON);
+            fabricItemGroupEntries.add(MOLTEN_IRON);
         });
     }
 }
