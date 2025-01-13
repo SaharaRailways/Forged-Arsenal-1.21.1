@@ -15,6 +15,7 @@ public class ModTags {
     }
 
     public static class Items {
+        public static final TagKey<Item> MOLTON_INGOTS = createTag("molten_ingots");
         public static final TagKey<Item> BLOOMERY_FUEL = createTag("bloomery_fuel");
 
         private static TagKey<Item> createTag(String name) {

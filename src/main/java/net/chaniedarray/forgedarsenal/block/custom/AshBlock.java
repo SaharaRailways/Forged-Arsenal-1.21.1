@@ -1,6 +1,7 @@
 package net.chaniedarray.forgedarsenal.block.custom;
 
 import net.chaniedarray.forgedarsenal.item.ModItems;
+import net.chaniedarray.forgedarsenal.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
@@ -21,17 +22,29 @@ public class AshBlock extends Block {
 
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
-        world.playSound(player, pos, SoundEvents.ITEM_BRUSH_BRUSHING_GRAVEL, SoundCategory.BLOCKS, 1f, 1f);
-        return ActionResult.SUCCESS;
+        if (player.getStackInHand(player.getActiveHand()).getItem() == ModItems.MOLTEN_IRON) {
+            if (!world.isClient) {
+                player.getStackInHand(player.getActiveHand()).decrement(1);
+                player.giveItemStack(new ItemStack(ModItems.SMOLDERING_ALLOY, 1));
+            }
+            world.playSound(player, pos, SoundEvents.ITEM_BRUSH_BRUSHING_GRAVEL, SoundCategory.BLOCKS, 1f, 1f);
+            return ActionResult.SUCCESS;
+        } else {
+            return ActionResult.PASS;
+        }
     }
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity itemEntity) {
-            if(itemEntity.getStack().getItem() == ModItems.MOLTEN_IRON) {
+            if(isValidItem(itemEntity.getStack())) {
                 itemEntity.setStack(new ItemStack(ModItems.SMOLDERING_ALLOY, itemEntity.getStack().getCount()));
             }
         }
+    }
+
+    private boolean isValidItem(ItemStack stack) {
+        return stack.isIn(ModTags.Items.MOLTON_INGOTS);
     }
 
 }
