@@ -21,6 +21,8 @@ public class ModItemGroups {
                         entries.add(ModItems.MOLTEN_IRON);
                         entries.add(ModItems.CHISEL);
                         entries.add(ModBlocks.ASH_BLOCK);
+                        entries.add(ModItems.ASH);
+                        entries.add(ModItems.CHOCOLATE);
                     }).build());
 
 

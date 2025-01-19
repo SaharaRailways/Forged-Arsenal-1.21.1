@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -32,6 +33,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('i', ModItems.SMOLDERING_ALLOY)
                 .input('s', Items.STICK)
                 .criterion(hasItem(ModItems.SMOLDERING_ALLOY), conditionsFromItem(ModItems.SMOLDERING_ALLOY))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CHOCOLATE, 4)
+                .input(Items.COCOA_BEANS)
+                .input(Items.SUGAR)
+                .input(Items.MILK_BUCKET)
+                .criterion(hasItem(Items.COCOA_BEANS), conditionsFromItem(Items.COCOA_BEANS))
+                .criterion(hasItem(Items.SUGAR), conditionsFromItem(Items.SUGAR))
+                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(Items.MILK_BUCKET))
                 .offerTo(exporter);
 
         offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ASH, ModBlocks.ASH_BLOCK);

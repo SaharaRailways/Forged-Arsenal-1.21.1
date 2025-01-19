@@ -5,6 +5,8 @@ import net.chaniedarray.forgedarsenal.item.ModItemGroups;
 import net.chaniedarray.forgedarsenal.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.item.Items;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,5 +28,7 @@ public class ForgedArsenal implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(Items.BLAZE_POWDER, 30000);
 	}
 }

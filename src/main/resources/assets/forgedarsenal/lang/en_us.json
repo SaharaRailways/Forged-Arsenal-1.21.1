@@ -2,8 +2,14 @@
   "item.forgedarsenal.smoldering_alloy": "Smoldering Alloy",
   "item.forgedarsenal.molten_iron": "Molten Iron",
   "item.forgedarsenal.chisel": "Chisel",
+  "item.forgedarsenal.chocolate": "Chocolate",
 
   "block.forgedarsenal.ash_block": "Ash Block",
 
-  "itemGroup.forgedarsenal.forged_arsenal_items": "Forged Arsenal Items"
+  "itemGroup.forgedarsenal.forged_arsenal_items": "Forged Arsenal Items",
+
+  "tooltip.forgedarsenal.chisel.shiftdown": "Use on certain blocks to change them",
+  "tooltip.forgedarsenal.chisel": "Press §eShift§r for more information",
+
+  "tooltip.forgedarsenal.ash_block.tooltip": "Coats anything it touches in a layer of ash"
 }
