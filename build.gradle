@@ -32,7 +32,6 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
 }
 
 processResources {
@@ -59,8 +58,14 @@ java {
 
 jar {
 	from("LICENSE") {
-		rename { "${it}_${project.base.archivesName.get()}"}
+		rename { "${it}_${project.base.archivesName.get()}" }
 	}
+}
+
+// Define the runDataGenerator task
+tasks.register('runDataGenerator', JavaExec) {
+	mainClass.set('net.chaniedarray.forgedarsenal.ForgedArsenalDataGenerator')
+	classpath = sourceSets.main.runtimeClasspath
 }
 
 // configure the maven publication

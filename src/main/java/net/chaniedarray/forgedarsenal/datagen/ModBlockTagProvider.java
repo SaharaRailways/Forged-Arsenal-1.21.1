@@ -19,7 +19,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         @Override
         protected void configure(RegistryWrapper.WrapperLookup wrapperLookup){
             getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
-                    .add(ModBlocks.ASH_BLOCK, oreDrops(ModBlocks.ASH_BLOCK));
+                    .add(ModBlocks.ASH_BLOCK);
         }
 
 

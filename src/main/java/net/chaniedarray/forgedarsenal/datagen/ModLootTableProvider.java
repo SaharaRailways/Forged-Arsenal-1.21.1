@@ -1,6 +1,7 @@
 package net.chaniedarray.forgedarsenal.datagen;
 
 import net.chaniedarray.forgedarsenal.block.ModBlocks;
+import net.chaniedarray.forgedarsenal.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
@@ -25,7 +26,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.ASH_BLOCK);
+        addDrop(ModBlocks.ASH_BLOCK, multipleOreDrops(ModBlocks.ASH_BLOCK, ModItems.ASH, 1.0F, 2.0F));
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

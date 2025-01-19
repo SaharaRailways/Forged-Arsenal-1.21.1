@@ -1,5 +1,6 @@
 package net.chaniedarray.forgedarsenal.datagen;
 
+import net.chaniedarray.forgedarsenal.block.ModBlocks;
 import net.chaniedarray.forgedarsenal.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -32,6 +33,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('s', Items.STICK)
                 .criterion(hasItem(ModItems.SMOLDERING_ALLOY), conditionsFromItem(ModItems.SMOLDERING_ALLOY))
                 .offerTo(exporter);
+
+        offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ASH, ModBlocks.ASH_BLOCK);
 
     }
 }
