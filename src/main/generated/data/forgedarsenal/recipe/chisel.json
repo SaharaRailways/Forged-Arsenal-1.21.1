@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "i": {
+      "item": "forgedarsenal:smoldering_alloy"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "i",
+    "s"
+  ],
+  "result": {
+    "count": 1,
+    "id": "forgedarsenal:chisel"
+  }
+}
