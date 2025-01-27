@@ -1,12 +1,12 @@
 package net.chaniedarray.forgedarsenal.datagen;
 
 import net.chaniedarray.forgedarsenal.block.ModBlocks;
+import net.chaniedarray.forgedarsenal.block.custom.NetherrackLamp;
 import net.chaniedarray.forgedarsenal.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.data.client.*;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
 
@@ -17,6 +17,11 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ASH_BLOCK);
+
+        Identifier lampOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.NETHERRACK_LAMP, blockStateModelGenerator.modelCollector);
+        Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.NETHERRACK_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.NETHERRACK_LAMP)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(NetherrackLamp.LIT, lampOnIdentifier, lampOffIdentifier)));
     }
 
     @Override
@@ -26,5 +31,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.ASH, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHOCOLATE, Models.GENERATED);
+
+
     }
 }

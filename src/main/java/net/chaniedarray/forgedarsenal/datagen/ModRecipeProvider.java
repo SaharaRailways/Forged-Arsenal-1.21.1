@@ -45,6 +45,5 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
         offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ASH, ModBlocks.ASH_BLOCK);
-
     }
 }

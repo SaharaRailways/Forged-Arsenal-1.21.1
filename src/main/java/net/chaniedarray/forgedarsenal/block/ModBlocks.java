@@ -2,6 +2,7 @@ package net.chaniedarray.forgedarsenal.block;
 
 import net.chaniedarray.forgedarsenal.ForgedArsenal;
 import net.chaniedarray.forgedarsenal.block.custom.AshBlock;
+import net.chaniedarray.forgedarsenal.block.custom.NetherrackLamp;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -16,6 +17,9 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
     public static final Block ASH_BLOCK = registerBlock("ash_block",
             new AshBlock(AbstractBlock.Settings.create().strength(4f).sounds(BlockSoundGroup.SAND)));
+
+    public static final Block NETHERRACK_LAMP = registerBlock("netherrack_lamp",
+            new NetherrackLamp(AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.GLASS).luminance(state -> state.get(NetherrackLamp.LIT) ? 15 : 0)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

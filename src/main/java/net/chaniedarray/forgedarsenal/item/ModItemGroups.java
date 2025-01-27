@@ -23,6 +23,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ASH_BLOCK);
                         entries.add(ModItems.ASH);
                         entries.add(ModItems.CHOCOLATE);
+                        entries.add(ModBlocks.NETHERRACK_LAMP);
                     }).build());
 
 

@@ -5,11 +5,15 @@
   "item.forgedarsenal.chocolate": "Chocolate",
 
   "block.forgedarsenal.ash_block": "Ash Block",
+  "block.forgedarsenal.netherrack_lamp": "Netherrack Lamp",
 
   "itemGroup.forgedarsenal.forged_arsenal_items": "Forged Arsenal Items",
 
   "tooltip.forgedarsenal.chisel.shiftdown": "Use on certain blocks to change them",
   "tooltip.forgedarsenal.chisel": "Press §eShift§r for more information",
 
-  "tooltip.forgedarsenal.ash_block.tooltip": "Coats anything it touches in a layer of ash"
+  "tooltip.forgedarsenal.ash_block.tooltip": "Coats anything it touches in a layer of ash",
+  "tooltip.forgedarsenal.chocolate": "You feel a burst of energy"
+
+
 }
