@@ -27,6 +27,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.ASH_BLOCK, multipleOreDrops(ModBlocks.ASH_BLOCK, ModItems.ASH, 1.0F, 2.0F));
+        addDrop(ModBlocks.NETHERRACK_LAMP);
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

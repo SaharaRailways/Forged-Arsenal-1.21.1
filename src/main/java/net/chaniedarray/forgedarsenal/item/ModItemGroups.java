@@ -24,6 +24,8 @@ public class ModItemGroups {
                         entries.add(ModItems.ASH);
                         entries.add(ModItems.CHOCOLATE);
                         entries.add(ModBlocks.NETHERRACK_LAMP);
+                        entries.add(ModItems.SMOLDERING_SWORD);
+                        entries.add(ModItems.SMOLDERING_PICKAXE);
                     }).build());
 
 

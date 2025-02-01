@@ -25,9 +25,17 @@ public class NetherrackLamp extends Block {
             if (state.get(LIT)) {
                 //sets LIT to false
                 world.setBlockState(pos, state.with(LIT, false));
+                return ActionResult.SUCCESS;
             } else if(player.isHolding(Items.FLINT_AND_STEEL)) {
                 world.setBlockState(pos, state.with(LIT, true));
+                return ActionResult.SUCCESS;
             }
+        } else if (!state.get(LIT)) {
+            return ActionResult.SUCCESS;
+
+        } else if (player.isHolding(Items.FLINT_AND_STEEL)) {
+            return ActionResult.SUCCESS;
+
         }
 
         return super.onUse(state, world, pos, player, hit);

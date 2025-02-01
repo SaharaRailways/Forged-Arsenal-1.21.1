@@ -1,6 +1,7 @@
 package net.chaniedarray.forgedarsenal;
 
 import net.chaniedarray.forgedarsenal.block.ModBlocks;
+import net.chaniedarray.forgedarsenal.component.ModDataComponentTypes;
 import net.chaniedarray.forgedarsenal.item.ModItemGroups;
 import net.chaniedarray.forgedarsenal.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -28,6 +29,8 @@ public class ForgedArsenal implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModDataComponentTypes.registerDataComponentTypes();
 
 		FuelRegistry.INSTANCE.add(Items.BLAZE_POWDER, 30000);
 	}

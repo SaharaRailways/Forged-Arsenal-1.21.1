@@ -1,5 +1,6 @@
 package net.chaniedarray.forgedarsenal.item.custom;
 
+import net.chaniedarray.forgedarsenal.component.ModDataComponentTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -44,6 +45,8 @@ public class ChiselItem extends Item {
                         item -> Objects.requireNonNull(context.getPlayer()).sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+
+                context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }
         }
 
@@ -57,6 +60,11 @@ public class ChiselItem extends Item {
         } else {
             tooltip.add(Text.translatable("tooltip.forgedarsenal.chisel"));
         }
+
+        if (stack.get(ModDataComponentTypes.COORDINATES) != null) {
+            tooltip.add(Text.literal("Last Block Changed at: " + stack.get(ModDataComponentTypes.COORDINATES)));
+        }
+
         super.appendTooltip(stack, context, tooltip, type);
     }
 }

@@ -19,7 +19,8 @@ public class ModBlocks {
             new AshBlock(AbstractBlock.Settings.create().strength(4f).sounds(BlockSoundGroup.SAND)));
 
     public static final Block NETHERRACK_LAMP = registerBlock("netherrack_lamp",
-            new NetherrackLamp(AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.GLASS).luminance(state -> state.get(NetherrackLamp.LIT) ? 15 : 0)));
+            new NetherrackLamp(AbstractBlock.Settings.create().strength(6f).requiresTool()
+                    .sounds(BlockSoundGroup.GLASS).luminance(state -> state.get(NetherrackLamp.LIT) ? 15 : 0)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
