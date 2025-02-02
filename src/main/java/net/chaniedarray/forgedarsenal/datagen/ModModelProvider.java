@@ -34,5 +34,26 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.SMOLDERING_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SMOLDERING_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SMOLDERING_HAMMER, Models.HANDHELD);
+
+
+        /*
+        ANCHOR
+        FIRE
+
+            throw anchor
+                if hit ground
+                    knockback aeo
+                    apply effect(fire)
+                if hit entity
+                    pull entity to player
+            heavy attack
+
+
+
+         */
+
+
+
     }
 }

@@ -4,8 +4,10 @@ import net.chaniedarray.forgedarsenal.block.ModBlocks;
 import net.chaniedarray.forgedarsenal.component.ModDataComponentTypes;
 import net.chaniedarray.forgedarsenal.item.ModItemGroups;
 import net.chaniedarray.forgedarsenal.item.ModItems;
+import net.chaniedarray.forgedarsenal.util.HammerUsageEvent;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.item.Items;
 import org.slf4j.Logger;
@@ -33,5 +35,7 @@ public class ForgedArsenal implements ModInitializer {
 		ModDataComponentTypes.registerDataComponentTypes();
 
 		FuelRegistry.INSTANCE.add(Items.BLAZE_POWDER, 30000);
+
+		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 	}
 }

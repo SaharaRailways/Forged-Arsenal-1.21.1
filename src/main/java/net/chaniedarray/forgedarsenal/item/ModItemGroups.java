@@ -26,6 +26,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.NETHERRACK_LAMP);
                         entries.add(ModItems.SMOLDERING_SWORD);
                         entries.add(ModItems.SMOLDERING_PICKAXE);
+                        entries.add(ModItems.SMOLDERING_HAMMER);
                     }).build());
 
 

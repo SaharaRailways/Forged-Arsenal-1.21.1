@@ -1,12 +1,13 @@
-// 1.21.1	2025-02-01T08:06:55.9520071	forged arsenal/Model Definitions
+// 1.21.1	2025-02-01T19:49:28.7710484	forged arsenal/Model Definitions
 2df00efbe9c6a7453aa63a3df4b0082acfb7f960 assets\forgedarsenal\models\item\smoldering_sword.json
 e57caaeef8c843fa61bc5cb5255bd4a4e36d5689 assets\forgedarsenal\models\block\ash_block.json
+08b28adeacff2bf178e78d3b88d5883ed8c00011 assets\forgedarsenal\models\item\smoldering_hammer.json
 48160247b482b840108c735e6205cdc5b9af7ef3 assets\forgedarsenal\models\block\netherrack_lamp_on.json
 22b8b2d3b3f12edc2b09a6a7dd65ca87a48b3254 assets\forgedarsenal\models\item\netherrack_lamp.json
 5758caefd2dcc742f757e6ab3719f3842621bc04 assets\forgedarsenal\blockstates\netherrack_lamp.json
 4cd4af7ddbc97806698c4651808ef067c1442cb7 assets\forgedarsenal\models\item\chocolate.json
-c7904d56a5a8bf1eca86e5145468a64d95b4a733 assets\forgedarsenal\models\block\netherrack_lamp.json
 b9c575bab14a8f90c5cda3ada2b5629019be4313 assets\forgedarsenal\models\item\molten_iron.json
+c7904d56a5a8bf1eca86e5145468a64d95b4a733 assets\forgedarsenal\models\block\netherrack_lamp.json
 65688043dc1fa8b7ebfb2937041b5a0b1ef88188 assets\forgedarsenal\models\item\smoldering_alloy.json
 e3f9d27f7d030222ee580ce9422381b92259e92a assets\forgedarsenal\models\item\chisel.json
 4d1d4aacd01803d66aca66587e60563902875deb assets\forgedarsenal\models\item\ash_block.json

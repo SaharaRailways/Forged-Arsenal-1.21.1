@@ -2,6 +2,7 @@ package net.chaniedarray.forgedarsenal.item;
 
 import net.chaniedarray.forgedarsenal.ForgedArsenal;
 import net.chaniedarray.forgedarsenal.item.custom.ChiselItem;
+import net.chaniedarray.forgedarsenal.item.custom.HammerItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -31,6 +32,10 @@ public class ModItems {
     public static final Item SMOLDERING_PICKAXE = registerItem("smoldering_pickaxe",
             new PickaxeItem(ModToolMaterials.SMOLDERING, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.SMOLDERING, 1, -2.8f))));
+
+    public static final Item SMOLDERING_HAMMER = registerItem("smoldering_hammer",
+            new HammerItem(ModToolMaterials.SMOLDERING, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.SMOLDERING, 7, -3.4f))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(ForgedArsenal.MOD_ID, name), item);
