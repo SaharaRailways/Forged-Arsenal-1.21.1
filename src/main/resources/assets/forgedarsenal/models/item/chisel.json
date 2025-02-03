@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "forgedarsenal:item/chisel"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "forgedarsenal:used": 1
+      },
+      "model": "forgedarsenal:item/chisel_used"
+    }
+  ]
+}
