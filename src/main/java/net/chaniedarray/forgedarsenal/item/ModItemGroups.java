@@ -27,6 +27,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SMOLDERING_SWORD);
                         entries.add(ModItems.SMOLDERING_PICKAXE);
                         entries.add(ModItems.SMOLDERING_HAMMER);
+                        entries.add(ModItems.IRON_DAGGER);
+                        entries.add(ModItems.TOMAHAWK);
                     }).build());
 
 

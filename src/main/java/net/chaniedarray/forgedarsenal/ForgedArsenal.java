@@ -2,6 +2,7 @@ package net.chaniedarray.forgedarsenal;
 
 import net.chaniedarray.forgedarsenal.block.ModBlocks;
 import net.chaniedarray.forgedarsenal.component.ModDataComponentTypes;
+import net.chaniedarray.forgedarsenal.entity.ModEntities;
 import net.chaniedarray.forgedarsenal.item.ModItemGroups;
 import net.chaniedarray.forgedarsenal.item.ModItems;
 import net.chaniedarray.forgedarsenal.util.HammerUsageEvent;
@@ -31,6 +32,7 @@ public class ForgedArsenal implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModEntities.registerModEntities();
 
 		ModDataComponentTypes.registerDataComponentTypes();
 

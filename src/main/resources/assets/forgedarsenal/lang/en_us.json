@@ -8,6 +8,7 @@
   "item.forgedarsenal.smoldering_sword": "Smoldering Sword",
   "item.forgedarsenal.smoldering_pickaxe": "Smoldering Pickaxe",
   "item.forgedarsenal.smoldering_hammer": "Smoldering Hammer",
+  "item.forgedarsenal.iron_dagger": "Iron Dagger",
 
   "block.forgedarsenal.ash_block": "Ash Block",
   "block.forgedarsenal.netherrack_lamp": "Netherrack Lamp",
@@ -18,7 +19,7 @@
   "tooltip.forgedarsenal.chisel": "Press §eShift§r for more information",
 
   "tooltip.forgedarsenal.ash_block.tooltip": "Coats anything it touches in a layer of ash",
-  "tooltip.forgedarsenal.chocolate": "You feel a burst of energy"
+  "tooltip.forgedarsenal.chocolate": "You feel a burst of energy",
 
-
+  "entity.forgedarsenal.iron_dagger": "Iron Dagger"
 }

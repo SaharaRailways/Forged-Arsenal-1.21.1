@@ -35,6 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SMOLDERING_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SMOLDERING_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SMOLDERING_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_DAGGER, Models.HANDHELD);
 
 
         /*
