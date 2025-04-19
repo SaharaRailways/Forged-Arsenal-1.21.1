@@ -10,15 +10,15 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
 public class DaggerProjectileModel extends EntityModel<DaggerProjectileEntity> {
-    public static final EntityModelLayer TOMAHAWK = new EntityModelLayer(Identifier.of(ForgedArsenal.MOD_ID, "tomahawk"), "main");
-    private final ModelPart tomahawk;
+    public static final EntityModelLayer DAGGER = new EntityModelLayer(Identifier.of(ForgedArsenal.MOD_ID, "dagger"), "main");
+    private final ModelPart dagger;
 
-    public DaggerProjectileModel(ModelPart root) {this.tomahawk = root.getChild("tomahawk");
+    public DaggerProjectileModel(ModelPart root) {this.dagger = root.getChild("dagger");
     }
     public static TexturedModelData getTexturedModelData() {
         ModelData modelData = new ModelData();
         ModelPartData modelPartData = modelData.getRoot();
-        ModelPartData tomahawk = modelPartData.addChild("tomahawk", ModelPartBuilder.create(), ModelTransform.pivot(0.0F, 16.5F, 0.0F));
+        ModelPartData tomahawk = modelPartData.addChild("dagger", ModelPartBuilder.create(), ModelTransform.pivot(0.0F, 16.5F, 0.0F));
 
         ModelPartData cube_r1 = tomahawk.addChild("cube_r1", ModelPartBuilder.create().uv(8, 7).cuboid(1.5F, 2.5F, -0.5F, 1.0F, 1.0F, 1.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, -7.0F, -4.0F, 0.0F, -1.5708F, 0.0F));
 
@@ -39,6 +39,6 @@ public class DaggerProjectileModel extends EntityModel<DaggerProjectileEntity> {
 
     @Override
     public void render(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, int color) {
-        tomahawk.render(matrices, vertexConsumer, light, overlay, color);
+        dagger.render(matrices, vertexConsumer, light, overlay, color);
     }
 }

@@ -22,12 +22,12 @@ public class DaggerProjectileEntity extends PersistentProjectileEntity {
     }
 
     public DaggerProjectileEntity(World world, PlayerEntity player) {
-        super(ModEntities.TOMAHAWK, player, world, new ItemStack(ModItems.TOMAHAWK), null);
+        super(ModEntities.DAGGER, player, world, new ItemStack(ModItems.DAGGER), null);
     }
 
     @Override
     protected ItemStack getDefaultItemStack() {
-        return new ItemStack(ModItems.TOMAHAWK);
+        return new ItemStack(ModItems.DAGGER);
     }
 
     public float getRenderingRotation() {

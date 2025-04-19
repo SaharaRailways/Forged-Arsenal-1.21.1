@@ -13,7 +13,7 @@ public class ForgedArsenalClient implements ClientModInitializer {
     public void onInitializeClient() {
         ModModelPredicates.registerModelPredicates();
 
-        EntityModelLayerRegistry.registerModelLayer(DaggerProjectileModel.TOMAHAWK, DaggerProjectileModel::getTexturedModelData);
-        EntityRendererRegistry.register(ModEntities.TOMAHAWK, DaggerProjectileRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(DaggerProjectileModel.DAGGER, DaggerProjectileModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.DAGGER, DaggerProjectileRenderer::new);
     }
 }

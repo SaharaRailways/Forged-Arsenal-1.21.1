@@ -35,7 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SMOLDERING_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SMOLDERING_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SMOLDERING_HAMMER, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.IRON_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DAGGER, Models.HANDHELD);
 
 
         /*
@@ -44,7 +44,7 @@ public class ModModelProvider extends FabricModelProvider {
 
             throw anchor
                 if hit ground
-                    knockback aeo
+                    knockback aoe
                     apply effect(fire)
                 if hit entity
                     pull entity to player

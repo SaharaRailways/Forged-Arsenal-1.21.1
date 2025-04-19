@@ -38,12 +38,8 @@ public class ModItems {
             new HammerItem(ModToolMaterials.SMOLDERING, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.SMOLDERING, 7, -3.4f))));
 
-    public static final Item IRON_DAGGER = registerItem("iron_dagger",
-            new SwordItem(ToolMaterials.IRON, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 3, -2.4f))));
-
-    public static final Item TOMAHAWK = registerItem("tomahawk",
-        new DaggerItem(new Item.Settings().maxCount(16)));
+    public static final Item DAGGER = registerItem("dagger",
+        new DaggerItem(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(ForgedArsenal.MOD_ID, name), item);

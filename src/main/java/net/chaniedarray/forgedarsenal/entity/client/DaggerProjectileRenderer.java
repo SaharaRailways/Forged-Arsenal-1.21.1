@@ -19,7 +19,7 @@ public class DaggerProjectileRenderer extends EntityRenderer<DaggerProjectileEnt
 
     public DaggerProjectileRenderer(EntityRendererFactory.Context ctx) {
         super(ctx);
-        this.model = new DaggerProjectileModel(ctx.getPart(DaggerProjectileModel.TOMAHAWK));
+        this.model = new DaggerProjectileModel(ctx.getPart(DaggerProjectileModel.DAGGER));
     }
 
     @Override

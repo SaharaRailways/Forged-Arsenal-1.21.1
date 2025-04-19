@@ -9,14 +9,14 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModEntities {
-    public static final EntityType<DaggerProjectileEntity> IRON_DAGGER = Registry.register(Registries.ENTITY_TYPE,
-            Identifier.of(ForgedArsenal.MOD_ID, "iron_dagger"),
+    public static final EntityType<DaggerProjectileEntity> DAGGER = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(ForgedArsenal.MOD_ID, "dagger"),
             EntityType.Builder.<DaggerProjectileEntity>create(DaggerProjectileEntity::new, SpawnGroup.MISC)
                     .dimensions(0.5f, 1.15f).build());
-    public static final EntityType<DaggerProjectileEntity> TOMAHAWK = Registry.register(Registries.ENTITY_TYPE,
-            Identifier.of(ForgedArsenal.MOD_ID, "tomahawk"),
-            EntityType.Builder.<DaggerProjectileEntity>create(DaggerProjectileEntity::new, SpawnGroup.MISC)
-                    .dimensions(0.5f, 1.15f).build());
+    //public static final EntityType<DaggerProjectileEntity> TOMAHAWK = Registry.register(Registries.ENTITY_TYPE,
+    //        Identifier.of(ForgedArsenal.MOD_ID, "tomahawk"),
+    //        EntityType.Builder.<DaggerProjectileEntity>create(DaggerProjectileEntity::new, SpawnGroup.MISC)
+    //          .dimensions(0.5f, 1.15f).build());
 
     public static void registerModEntities() {
         ForgedArsenal.LOGGER.info("Registering Mod Entities for " + ForgedArsenal.MOD_ID);

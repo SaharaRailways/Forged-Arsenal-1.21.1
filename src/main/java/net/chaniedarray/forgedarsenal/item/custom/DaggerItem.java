@@ -1,6 +1,5 @@
 package net.chaniedarray.forgedarsenal.item.custom;
 
-import net.chaniedarray.forgedarsenal.ForgedArsenal;
 import net.chaniedarray.forgedarsenal.entity.custom.DaggerProjectileEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -31,7 +30,6 @@ public class DaggerItem extends Item {
         if (!user.getAbilities().creativeMode) {
             itemStack.decrement(1);
         }
-        ForgedArsenal.LOGGER.info("Dagger thrown!");
 
         return TypedActionResult.success(itemStack, world.isClient());
     }
