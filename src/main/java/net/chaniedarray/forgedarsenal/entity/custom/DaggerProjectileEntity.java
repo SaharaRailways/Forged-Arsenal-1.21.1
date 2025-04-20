@@ -13,9 +13,13 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import org.joml.Vector2f;
 
+import java.util.Objects;
+import java.util.UUID;
+
 public class DaggerProjectileEntity extends PersistentProjectileEntity {
     private float rotation;
     public Vector2f groundedOffset;
+    public UUID ownerUuid;
 
     public DaggerProjectileEntity(EntityType<? extends PersistentProjectileEntity> entityType, World world) {
         super(entityType, world);
@@ -23,6 +27,13 @@ public class DaggerProjectileEntity extends PersistentProjectileEntity {
 
     public DaggerProjectileEntity(World world, PlayerEntity player) {
         super(ModEntities.DAGGER, player, world, new ItemStack(ModItems.DAGGER), null);
+        this.ownerUuid = player.getUuid();
+        System.out.println("Owner UUID: " + this.ownerUuid);
+    }
+
+    public UUID getOwnerUuid() {
+        System.out.println("getOwnerUuid: " + Objects.requireNonNull(this.getOwner()).getUuid());
+        return Objects.requireNonNull(this.getOwner()).getUuid();
     }
 
     @Override

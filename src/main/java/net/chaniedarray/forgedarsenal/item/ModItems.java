@@ -39,7 +39,7 @@ public class ModItems {
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.SMOLDERING, 7, -3.4f))));
 
     public static final Item DAGGER = registerItem("dagger",
-        new DaggerItem(new Item.Settings()));
+        new DaggerItem(new Item.Settings().maxCount(2)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(ForgedArsenal.MOD_ID, name), item);
